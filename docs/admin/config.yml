@@ -12,6 +12,8 @@ collections:
   - name: "pages"
     label: "Seiten"
     folder: "docs"
+    extension: "md"
+    format: "frontmatter"
     create: true
     slug: "{{slug}}"
     fields:
