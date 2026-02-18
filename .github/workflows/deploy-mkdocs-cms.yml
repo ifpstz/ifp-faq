@@ -31,7 +31,12 @@ jobs:
 
       # 6️⃣ Deploy auf gh-pages
       - name: Deploy to GitHub Pages
-        # Baut docs/ (inkl. docs/admin) und pusht nach gh-pages
-        run: mkdocs gh-deploy --force --remote-name origin
+        run:
+          # 1. Seite lokal bauen (erstellt den 'site' Ordner)
+          mkdocs build 
+          # 2. Sicherstellen, dass die aktuellste Config im Build landet
+          cp -r docs/admin site/
+          # 3. Den fertigen 'site' Ordner hochladen
+          mkdocs gh-deploy --force --remote-name origin
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
