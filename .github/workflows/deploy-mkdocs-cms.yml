@@ -16,4 +16,4 @@ jobs:
       - run: pip install mkdocs mkdocs-material
       - run: mkdocs build
       - run: cp -r docs/admin site/admin
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force --verbose
