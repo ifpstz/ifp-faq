@@ -31,7 +31,7 @@ jobs:
 
       # 6️⃣ Deploy auf gh-pages
       - name: Deploy to GitHub Pages
-        run:
+        run: |
           # 1. Seite lokal bauen (erstellt den 'site' Ordner)
           mkdocs build 
           # 2. Sicherstellen, dass die aktuellste Config im Build landet
