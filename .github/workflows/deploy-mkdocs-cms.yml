@@ -8,14 +8,34 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      # 1️⃣ Repo auschecken
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Python einrichten
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs mkdocs-material
-      - run: mkdocs build
-      - run: cp -r docs/admin site/admin
-      - run: mkdocs gh-deploy --force --verbose --remote-name origin
+
+      # 3️⃣ Abhängigkeiten installieren
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material
+
+      # 4️⃣ MkDocs bauen
+      - name: Build site
+        run: mkdocs build --verbose
+
+      # 5️⃣ Decap CMS Admin in Site kopieren
+      - name: Copy Decap CMS admin
+        run: cp -r docs/admin site/admin
+
+      # 6️⃣ Deploy auf gh-pages
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --verbose --remote-name origin
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
