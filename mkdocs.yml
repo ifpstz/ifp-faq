@@ -1,0 +1,35 @@
+site_name: FAQ Infrastrukturförderprogramm
+theme:
+  name: material
+  language: de
+
+  # Navigation
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+  # Heller & dunkler Modus
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Dunkelmodus aktivieren
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: hellen Modus aktivieren
+
+  # Schriftarten auf Berlin Type umstellen
+  font:
+    text: "Berlin Type"
+    code: "Fira Code"
+
+nav:
+  - Startseite: index.md
+extra_css:
+  - styles/Berlin.css

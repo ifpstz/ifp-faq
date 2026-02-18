@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ifpstz/ifp-faq
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "docs/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Seiten"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown" }

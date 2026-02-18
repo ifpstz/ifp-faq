@@ -1,0 +1,106 @@
+/* === Berlin CI Design === */
+
+/* 1. Schriftart einbinden (lokal oder extern) */
+/* === Berlin Type Regular === */
+@font-face {
+  font-family: "Berlin Type";
+  src: url("../assets/fonts/BerlinTypeWeb-Regular.woff2") format("woff2");
+  font-weight: 400; /* normal */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Berlin Type Bold === */
+@font-face {
+  font-family: "Berlin Type";
+  src: url("../assets/fonts/BerlinTypeWeb-Bold.woff2") format("woff2");
+  font-weight: 600; /* fett */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nur Überschriften */
+.md-typeset h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: "Berlin Type", sans-serif;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+/* Fließtext */
+.md-typeset p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+/* ---------------------------
+   Blockquote / Zitate
+--------------------------- */
+.md-typeset blockquote {
+  color: var(--md-accent-fg-color);   /* Textfarbe */
+  border-left: 4px solid var(--md-accent-fg-color) !important; /* linke Linie */
+}
+
+/* Seitenmenü / Navigation */
+.md-nav__title {
+  font-size: 0.9rem;      /* Titelgröße */
+  font-weight: 600;        /* fett */
+  color: var(--md-primary-fg-color);
+  line-height: 1.2;
+}
+.md-nav__link {
+  font-size: 0.75rem;          /* Schriftgröße anpassen */
+  font-weight: 500;        /* fett */
+  line-height: 1.2;
+  color: var(--md-nav-link-color);
+}
+
+/* 2. Schrift anwenden */
+:root {
+  --md-text-font: "Berlin Type", Arial, sans-serif;
+}
+/* 3. Berliner CI Farben definieren */
+/* Light Mode */
+:root {
+  --md-primary-fg-color: #324fa3;             /* Primäre Farbe (z. B. Überschriften, Buttons) */
+  --md-primary-fg-color--light: #dddddd;      /* Hellerer Ton der Primärfarbe */
+  --md-primary-fg-color--dark: #363636;       /* Dunklerer Ton der Primärfarbe */
+  --md-accent-fg-color: #7694ce;              /* Akzentfarbe (Links, Hervorhebungen) */
+  --md-fg-color: #13245b;                     /* Generelle Textfarbe */
+  --md-fg-color--secondary: #988bc2;          /* Sekundäre Textfarbe (z. B. Fußnoten, Labels) */
+  --md-background-color: #324fa3;             /* Seiten-Hintergrund */
+  --md-surface-color: #324fa3;                /* Hintergrund für Karten, Container, Menüs */
+  --md-nav-bg-color: #988bc2;                 /* Hintergrund Navigation */
+  --md-nav-link-color: #272727;               /* Farbe Navigation Links */
+  --md-link-color: #000000;                   /* Linkfarbe (Textlinks) */
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #67b18d;             /* Primäre Farbe (z. B. Überschriften, Buttons) */
+  --md-accent-fg-color: #B5D4B7;              /* Akzentfarbe (Links, Hervorhebungen) */
+  --md-fg-color--secondary: #988bc2;          /* Sekundäre Textfarbe (z. B. Fußnoten, Labels) */
+  --md-background-color: #13245b;             /* Seiten-Hintergrund */
+  --md-surface-color: #13245b;                /* Hintergrund für Karten, Container, Menüs */
+  --md-nav-bg-color: #ffffff;                 /* Hintergrund Navigation */
+  --md-nav-link-color: #cccccc;               /* Farbe Navigation Links */
+  --md-link-color: #ffffff;                   /* Linkfarbe (Textlinks) */
+}
