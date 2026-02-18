@@ -33,3 +33,6 @@ nav:
   - Startseite: index.md
 extra_css:
   - styles/Berlin.css
+extra_templates:
+  - admin/index.html
+  - admin/config.yml
