@@ -16,4 +16,17 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Bild", name: "image", widget: "image", required: false}
       - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "post"
+    label: "Blog"
+    folder: "docs/blog"
+    path: "{{slug}}/index"
+    create: true
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime"}
+      - {label: "Beschreibung", name: "description", widget: "text"}
+      - {label: "Bild", name: "image", widget: "image", required: false}
+      - {label: "Inhalt", name: "body", widget: "markdown"}
