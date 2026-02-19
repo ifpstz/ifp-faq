@@ -4,13 +4,19 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       # 1️⃣ Repo auschecken
@@ -29,14 +35,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material
 
-      # 6️⃣ Deploy auf gh-pages
-      - name: Deploy to GitHub Pages
+      # Mkdocs bauen (Kopiert das Admin-Panel in den fertigen Build-Ordner)
+      - name: Build MkDocs
         run: |
-          # 1. Seite lokal bauen (erstellt den 'site' Ordner)
-          mkdocs build 
-          # 2. Sicherstellen, dass die aktuellste Config im Build landet
+          mkdocs build
           cp -r docs/admin site/
-          # 3. Den fertigen 'site' Ordner hochladen
-          mkdocs gh-deploy --force --remote-name origin
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # MkDocs erstellt standardmäßig den Ordner 'site'
+          path: './site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
