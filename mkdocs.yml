@@ -8,6 +8,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - content.code.copy
 
   # Heller & dunkler Modus
@@ -32,8 +33,14 @@ theme:
 
 nav:
   - Startseite: index.md
+  - Blog: blog/index.md
+
 extra_css:
   - styles/Berlin.css
 extra_templates:
   - admin/index.html
   - admin/config.yml
+
+plugins:
+  - search
+  - blog
