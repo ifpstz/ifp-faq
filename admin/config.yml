@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: ifpstz/ifp-faq
+  branch: gh-pages
+
+publish_mode: editorial_workflow
+
+media_folder: "docs/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Seiten"
+    folder: "docs"
+    extension: "md"
+    format: "frontmatter"
+    create: true
+    slug: ""
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
