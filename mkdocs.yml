@@ -36,7 +36,7 @@ nav:
   - Blog: blog/index.md
 
 extra_css:
-  - styles/Berlin.css
+  - styles/berlin.css
 extra_templates:
   - admin/index.html
   - admin/config.yml
