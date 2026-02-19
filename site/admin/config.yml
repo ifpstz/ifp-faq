@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: ifpstz/ifp-faq
   branch: gh-pages
 
