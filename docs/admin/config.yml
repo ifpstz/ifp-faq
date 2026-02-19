@@ -1,9 +1,7 @@
 backend:
   name: github
   repo: ifpstz/ifp-faq
-  branch: gh-pages
-
-publish_mode: editorial_workflow
+  branch: main
 
 media_folder: "docs/images"
 public_folder: "/images"
