@@ -32,6 +32,10 @@ theme:
     text: "Berlin Type"
     code: "Fira Code"
 
+nav:
+  - Home: index.md
+  - ... # Hier fügt Awesome Pages alle restlichen Ordner/Dateien automatisch ein
+
 extra_css:
   - styles/berlin.css
 extra_templates:
