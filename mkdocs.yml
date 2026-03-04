@@ -32,10 +32,6 @@ theme:
     text: "Berlin Type"
     code: "Fira Code"
 
-nav:
-  - Startseite: index.md
-  - Blog: blog/index.md
-
 extra_css:
   - styles/berlin.css
 extra_templates:
