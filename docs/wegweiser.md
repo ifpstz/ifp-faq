@@ -3,7 +3,7 @@ title: Wegweiser
 image: /images/wegweiser.jpg
 ---
 
-Der **Wegweiser für Träger** ist Ihre zentrale Anlaufstelle für aktuelle Informationen, hilfreiche Vorlagen und wichtige Verlinkungen rund um die Arbeit in Stadtteilzentren, Selbsthilfekontaktstellen und der Mobilen Stadtteilarbeit.
+Der [**Wegweiser für Träger** ](https://www.berlin.de/sen/soziales/buergerschaftliches-engagement/stadtteilzentren/wegweiser-1528180.php)ist Ihre zentrale Anlaufstelle für aktuelle Informationen, hilfreiche Vorlagen und wichtige Verlinkungen rund um die Arbeit in Stadtteilzentren, Selbsthilfekontaktstellen und der Mobilen Stadtteilarbeit.
 
 ### Was bietet der Wegweiser?
 
@@ -12,3 +12,5 @@ Der **Wegweiser für Träger** ist Ihre zentrale Anlaufstelle für aktuelle Info
 - **Verweise** auf weiterführende Informationen und Ressourcen
 
 Alle Inhalte sind übersichtlich strukturiert und jederzeit griffbereit, um Sie in Ihrer täglichen Arbeit bestmöglich zu unterstützen.
+
+[Zum Wegweiser](https://www.berlin.de/sen/soziales/buergerschaftliches-engagement/stadtteilzentren/wegweiser-1528180.php){ .md-button }
