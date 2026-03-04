@@ -16,9 +16,8 @@ collections:
     nested:
       depth: 5 
     path: "{{slug}}/index" 
-    slug: "{{slug}}"
-    meta: { path: { label: 'Pfad (z.B. Oberkategorie/Thema)', widget: string } }
     fields:
+      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
       # FEATURE: Hero Bild
       - { label: "Bild", name: "image", widget: "image", required: false}
