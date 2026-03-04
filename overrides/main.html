@@ -2,7 +2,9 @@
 
 {% block content %}
   {% if page.meta.image %}
-    <img src="{{ page.meta.image | url }}" style="width:100%; border-radius: 8px; margin-bottom: 1em;">
+    {# Entfernt den ersten Slash, damit der 'url' Filter den Unterordner ifp-faq korrekt davor setzt #}
+    {% set img_path = page.meta.image[1:] if page.meta.image.startswith('/') else page.meta.image %}
+    <img src="{{ img_path | url }}" style= "width:100%; border-radius: 8px; margin-bottom: 1em;">
   {% endif %}
   {{ super() }}
 {% endblock %}
