@@ -17,6 +17,7 @@ collections:
       depth: 5 
     path: "{{slug}}/index" 
     slug: "{{slug}}"
+    meta: { path: { label: 'Pfad (z.B. Oberkategorie/Thema)', widget: string } }
     fields:
       - { label: "Titel", name: "title", widget: "string" }
       # FEATURE: Hero Bild
