@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-nav-weight
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 
       # Mkdocs bauen (Kopiert das Admin-Panel in den fertigen Build-Ordner)
       - name: Build MkDocs
