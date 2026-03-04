@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.meta.image %}
+    <img src="{{ page.meta.image | url }}" style="width:100%; border-radius: 8px; margin-bottom: 1em;">
+  {% endif %}
+  {{ super() }}
+{% endblock %}
