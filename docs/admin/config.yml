@@ -16,8 +16,6 @@ collections:
     nested:
       depth: 5 
     path: "{{slug}}/index" 
-    summary: "{{title}} (Position: {{weight}})" # Zeigt die Gewichtung direkt in der Liste an
-    sortable_fields: ["weight", "title"] # Erlaubt das Sortieren der Liste im CMS nach Gewicht
     fields:
       - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
