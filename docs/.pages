@@ -1,6 +1,6 @@
 nav:
-  - Home: index.md
-  - Wegweiser
-  - Ressourcen
-  - Blog
+  - home: index.md
+  - wegweiser
+  - ressourcen
+  - blog
   - ...
