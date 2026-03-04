@@ -46,6 +46,6 @@ plugins:
   - search
   - blog
   - awesome-pages
-  - nav-weight
+  - mkdocs-nav-weight
 markdown_extensions:
   - attr_list
