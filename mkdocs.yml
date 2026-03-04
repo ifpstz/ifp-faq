@@ -2,6 +2,7 @@ site_name: FAQ Infrastrukturförderprogramm
 site_url: https://ifpstz.github.io/ifp-faq/
 theme:
   name: material
+  custom_dir: overrides
   language: de
 
   # Navigation
