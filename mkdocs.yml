@@ -44,3 +44,6 @@ extra_templates:
 plugins:
   - search
   - blog
+
+markdown_extensions:
+  - attr_list
