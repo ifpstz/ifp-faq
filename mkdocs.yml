@@ -1,4 +1,5 @@
 site_name: FAQ Infrastrukturförderprogramm
+use_directory_urls: true
 site_url: https://ifpstz.github.io/ifp-faq/
 theme:
   name: material
