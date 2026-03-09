@@ -7,10 +7,10 @@ draft: false
 
 # Raumprogramm für Stadtteilzentren
 
-**Version:** 1.0
-**Gültig ab:** 2026
-**Herausgeber:** Senatsverwaltung für Soziales, Fachbereich Infrastrukturförderprogramm Stadtteilzentren
-**Zweck:** Leitfaden für Neubauten und Umbauten von Stadtteilzentren
+- **Version:** 1.0
+- **Gültig ab:** 2026
+- **Herausgeber:** Senatsverwaltung für Soziales, Fachbereich Infrastrukturförderprogramm Stadtteilzentren
+- **Zweck:** Leitfaden für Neubauten und Umbauten von Stadtteilzentren
 
 ***
 
