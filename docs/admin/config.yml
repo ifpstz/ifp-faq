@@ -8,7 +8,7 @@ public_folder: "/images"
 
 collections:
   - name: "raumprogramm"
-    label: "Seiten"
+    label: "Raumprogramm"
     folder: "docs/raumprogramm"
     extension: "md"
     format: "frontmatter"
@@ -26,7 +26,7 @@ collections:
       - { label: "Inhalt", name: "body", widget: "markdown" }
 
   - name: "ressourcen"
-    label: "Seiten"
+    label: "Ressourcen"
     folder: "docs/ressourcen"
     extension: "md"
     format: "frontmatter"
@@ -44,7 +44,7 @@ collections:
       - { label: "Inhalt", name: "body", widget: "markdown" }
 
   - name: "wegweiser"
-    label: "Seiten"
+    label: "Wegweiser"
     folder: "docs/wegweiser"
     extension: "md"
     format: "frontmatter"
