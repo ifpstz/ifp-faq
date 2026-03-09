@@ -24,7 +24,7 @@ collections:
       # FEATURE: Sortierung (wird als 'order' im Frontmatter gespeichert)
       - { label: "Sortierung (niedrig = oben)", name: "order", widget: "number", default: 10, required: false }
       # FEATURE: Entwurf-Status
-      - { label: "Entwurf", name: "draft", widget: "boolean", default: false }
+      - { label: "Entwurf", name: "draft", widget: "boolean", default: true }
       - { label: "Inhalt", name: "body", widget: "markdown" }
 
   - name: "post"

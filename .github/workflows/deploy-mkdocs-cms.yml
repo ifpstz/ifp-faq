@@ -33,13 +33,31 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-drafts mkdocs-awesome-pages-plugin
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 
-      # Mkdocs bauen (Kopiert das Admin-Panel in den fertigen Build-Ordner)
+      # 4️⃣ Kopiert nur Seiten ohne 'draft: true' ins temporäre Build-Verzeichnis
+      - name: Filter Drafts recursively
+        run: |
+          mkdir -p docs_tmp
+          find docs -name "*.md" | while read f; do
+            if ! grep -q "draft: true" "$f"; then
+              rel_path="${f#docs/}"
+              mkdir -p "docs_tmp/$(dirname "$rel_path")"
+              cp "$f" "docs_tmp/$rel_path"
+            fi
+          done
+          mv docs docs_backup
+          mv docs_tmp docs
+
+      # 5️⃣ MkDocs bauen (inkl. Admin-Panel kopieren)
       - name: Build MkDocs
         run: |
           mkdocs build
           cp -r docs/admin site/
+
+      # 6️⃣ Original docs wiederherstellen
+      - name: Restore Docs
+        run: mv docs_backup docs
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

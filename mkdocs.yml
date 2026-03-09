@@ -47,7 +47,6 @@ plugins:
   - search
   - awesome-pages
   - blog
-  - drafts
   
 markdown_extensions:
   - attr_list
