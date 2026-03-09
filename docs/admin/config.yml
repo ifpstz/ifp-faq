@@ -14,7 +14,7 @@ collections:
     format: "frontmatter"
     create: true
 #    path: "{{file_path}}" 
-    summary: "{{title}} {{#if draft}}(ENTWURF){{/if}}"
+    summary: "{{title}} — Status: {{draft}}"
     fields:
 #      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
@@ -33,7 +33,7 @@ collections:
     format: "frontmatter"
     create: true
 #    path: "{{file_path}}" 
-    summary: "{{title}} {{#if draft}}(ENTWURF){{/if}}"
+    summary: "{{title}} — Status: {{draft}}"
     fields:
 #      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
@@ -52,7 +52,7 @@ collections:
     format: "frontmatter"
     create: true
 #    path: "{{file_path}}" 
-    summary: "{{title}} {{#if (eq draft true)}}📝 Entwurf{{else}}✅ Live{{/if}}"
+    summary: "{{title}} — Status: {{draft}}"
     fields:
 #      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
