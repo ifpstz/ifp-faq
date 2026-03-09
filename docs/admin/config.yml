@@ -15,9 +15,9 @@ collections:
     create: true
     nested:
       depth: 5 
-    path: "{{file_path}}" 
+#    path: "{{file_path}}" 
     fields:
-      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
+#      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
       # FEATURE: Hero Bild
       - { label: "Bild", name: "image", widget: "image", required: false}
