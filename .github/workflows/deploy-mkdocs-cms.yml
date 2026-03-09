@@ -35,17 +35,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 
-      # 4️⃣ Kopiert nur Seiten ohne 'draft: true' ins temporäre Build-Verzeichnis
-      - name: Filter Drafts recursively
+      # 4️⃣ Drafts filtern
+      - name: Filter Drafts
         run: |
-          mkdir -p docs_tmp
-          find docs -name "*.md" | while read f; do
+          mkdir docs_tmp
+          # Admin unverändert übernehmen
+          cp -r docs/admin docs_tmp/admin
+
+          # Alle Markdown-Dateien rekursiv filtern
+          find docs -type f -name "*.md" ! -path "docs/admin/*" | while read f; do
             if ! grep -q "draft: true" "$f"; then
-              rel_path="${f#docs/}"
-              mkdir -p "docs_tmp/$(dirname "$rel_path")"
-              cp "$f" "docs_tmp/$rel_path"
+              # Zielpfad in docs_tmp gleich wie im Original
+              dest="docs_tmp/${f#docs/}"
+              mkdir -p "$(dirname "$dest")"
+              cp "$f" "$dest"
             fi
           done
+
+          # Backup und Ersetzen
           mv docs docs_backup
           mv docs_tmp docs
 
