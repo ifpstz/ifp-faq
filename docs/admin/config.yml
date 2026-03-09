@@ -15,7 +15,7 @@ collections:
     create: true
     nested:
       depth: 5 
-    path: "{{slug}}" 
+    path: "{{file_path}}" 
     fields:
       - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
       - { label: "Titel", name: "title", widget: "string" }
