@@ -7,14 +7,48 @@ media_folder: "docs/images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
+  - name: "raumprogramm"
     label: "Seiten"
-    folder: "docs/pages"
+    folder: "docs/raumprogramm"
     extension: "md"
     format: "frontmatter"
     create: true
-    nested:
-      depth: 5 
+#    path: "{{file_path}}" 
+    fields:
+#      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
+      - { label: "Titel", name: "title", widget: "string" }
+      # FEATURE: Hero Bild
+      - { label: "Bild", name: "image", widget: "image", required: false}
+      # FEATURE: Sortierung (wird als 'order' im Frontmatter gespeichert)
+      - { label: "Sortierung (niedrig = oben)", name: "order", widget: "number", default: 10, required: false }
+      # FEATURE: Entwurf-Status
+      - { label: "Entwurf", name: "draft", widget: "boolean", default: true }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "ressourcen"
+    label: "Seiten"
+    folder: "docs/ressourcen"
+    extension: "md"
+    format: "frontmatter"
+    create: true
+#    path: "{{file_path}}" 
+    fields:
+#      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
+      - { label: "Titel", name: "title", widget: "string" }
+      # FEATURE: Hero Bild
+      - { label: "Bild", name: "image", widget: "image", required: false}
+      # FEATURE: Sortierung (wird als 'order' im Frontmatter gespeichert)
+      - { label: "Sortierung (niedrig = oben)", name: "order", widget: "number", default: 10, required: false }
+      # FEATURE: Entwurf-Status
+      - { label: "Entwurf", name: "draft", widget: "boolean", default: true }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "wegweiser"
+    label: "Seiten"
+    folder: "docs/wegweiser"
+    extension: "md"
+    format: "frontmatter"
+    create: true
 #    path: "{{file_path}}" 
     fields:
 #      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
