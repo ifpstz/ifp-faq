@@ -1,5 +1,4 @@
 ---
-slug: Wegweiser/index.md
 title: Wegweiser
 image: /images/wegweiser.jpg
 order: 1

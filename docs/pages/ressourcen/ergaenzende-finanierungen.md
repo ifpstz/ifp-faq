@@ -1,5 +1,4 @@
 ---
-slug: ressourcen/ergänzende_finanzierungen
 title: Ergänzende Finanzierungen
 image: ''
 order: 10

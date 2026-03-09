@@ -1,5 +1,4 @@
 ---
-slug: Raumprogramm/
 title: Raumprogramm für Stadtteilzentren
 image: ''
 order: 10

@@ -1,5 +1,4 @@
 ---
-slug: Raumprogramm/
 title: Raumtypen und Anforderungen
 image: ''
 order: 10

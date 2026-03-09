@@ -1,5 +1,4 @@
 ---
-slug: Ressourcen/index.md
 title: Ressourcen
 image: ''
 order: 2

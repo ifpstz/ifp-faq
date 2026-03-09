@@ -1,5 +1,4 @@
 ---
-slug: Raumprogramm/
 title: Leitlinien für Raumgestaltung
 image: ''
 order: 10
