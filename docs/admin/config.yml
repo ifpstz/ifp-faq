@@ -9,7 +9,7 @@ public_folder: "/images"
 collections:
   - name: "pages"
     label: "Seiten"
-    folder: "docs"
+    folder: "docs/pages"
     extension: "md"
     format: "frontmatter"
     create: true
