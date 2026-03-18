@@ -38,17 +38,13 @@ jobs:
       # 4️⃣ Drafts filtern
       - name: Filter Drafts
         run: |
-          mkdir docs_tmp
-          # Admin unverändert übernehmen
-          cp -r docs/admin docs_tmp/admin
+          # Alles auf einmal kopieren
+          cp -r docs docs_tmp
 
-          # Alle Markdown-Dateien rekursiv filtern
-          find docs -type f -name "*.md" ! -path "docs/admin/*" | while read f; do
-            if ! grep -q "draft: true" "$f"; then
-              # Zielpfad in docs_tmp gleich wie im Original
-              dest="docs_tmp/${f#docs/}"
-              mkdir -p "$(dirname "$dest")"
-              cp "$f" "$dest"
+          # Nur Draft-MDs wieder entfernen
+          find docs_tmp -type f -name "*.md" ! -path "docs_tmp/admin/*" | while read f; do
+            if grep -q "draft: true" "$f"; then
+              rm "$f"
             fi
           done
 
