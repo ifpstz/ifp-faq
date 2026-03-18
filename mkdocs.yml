@@ -3,8 +3,8 @@ use_directory_urls: true
 site_url: https://ifpstz.github.io/ifp-faq/
 theme:
   name: material
-  logo: assets/images/B_Logo_Baer_N_1C.png  # Pfad relativ zum docs/-Ordner
-  favicon: assets/images/B_Logo_Baer_N_1C.png
+  logo: images/B_Logo_Baer_N_1C.png  # Pfad relativ zum docs/-Ordner
+  favicon: images/B_Logo_Baer_N_1C.png
   custom_dir: overrides
   language: de
 
