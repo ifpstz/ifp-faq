@@ -2,7 +2,7 @@
 title: Stadtteilzentren Sachberichte
 image: ''
 order: 10
-draft: true
+draft: false
 ---
 
 # Ausfüllhilfen Sachbericht Stadtteilzentren
@@ -16,12 +16,15 @@ Schwerpunkte und Besonderheiten des Stadtteilzentrums. Welche Schwerpunkte, beso
 Perspektiven, historisch gewachsenen Merkmale oder andere Gegebenheiten sind aus Ihrer Sicht wichtig, um die Arbeit des Stadtteilzentrums zu verstehen?
 
 ### Mitarbeitende im Stadtteilzentrum
+
 #### Anzahl der Mitarbeitenden
+
 Gemeint sind alle **hauptamtlichen Mitarbeitenden** an **allen Projektstandorten**
 Auch Kolleg:innen aus der **Mobilen Stadtteilarbeit**, und **kofinanzierten Projekten (EFRE, GI, Flucht und Ehrenamt / Lena+)** werden mitgezählt.
 
 #### davon Frauen
-Die Anzahl der Frauen* innerhalb der Besuchendenschaft ist wichtig für die besondere Förderung von Frauen* im Rahmen der Förderstruktur. Bitte zählen Sie dazu alle Menschen, die sich selbst als Frauen identifizieren. Männer und nicht binäre Gender zählen nicht zu dieser Gruppe.
+
+Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die besondere Förderung von Frauen\* im Rahmen der Förderstruktur. Bitte zählen Sie dazu alle Menschen, die sich selbst als Frauen identifizieren. Männer und nicht binäre Gender zählen nicht zu dieser Gruppe.
 
 ## Teil 1 - Quantitative Angaben im Überblick
 
@@ -30,8 +33,11 @@ Die Anzahl der Frauen* innerhalb der Besuchendenschaft ist wichtig für die beso
 #### Anzahl der Besuchenden
 
 ##### Methode der Datenerhebung
+
 ##### Zahl der Besuchenden im Berichtsjahr
+
 ##### davon Frauen
+
 Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die besondere Förderung von Frauen\* im Rahmen der Förderstruktur. Bitte zählen Sie dazu alle Menschen, die sich selbst als Frauen identifizieren. Männer und nicht binäre Gender zählen nicht zu dieser Gruppe.
 
 #### Besuchende nach Altersgruppen
