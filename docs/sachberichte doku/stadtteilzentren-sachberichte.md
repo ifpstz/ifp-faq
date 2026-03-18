@@ -19,7 +19,9 @@ Perspektiven, historisch gewachsenen Merkmale oder andere Gegebenheiten sind aus
 
 #### Anzahl der Mitarbeitenden
 
-Gemeint sind alle **hauptamtlichen Mitarbeitenden** an **allen Projektstandorten**
+Gemeint sind alle **hauptamtlichen Mitarbeitenden** an **allen Projektstandorten.**
+
+
 Auch Kolleg:innen aus der **Mobilen Stadtteilarbeit**, und **kofinanzierten Projekten (EFRE, GI, Flucht und Ehrenamt / Lena+)** werden mitgezählt.
 
 #### davon Frauen
@@ -35,12 +37,14 @@ Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die bes
 ##### Methode der Datenerhebung
 
 Möglichkeiten:
+
 * ganzjährige Zählung
 * Statistikweochen
 
 Wählen Sie die für Sie passende Datenerhebungsmethode aus
 
 ##### Zahl der Besuchenden im Berichtsjahr
+
 Wenn Sie Statistikwochen als Erhebungsmethode ausgewählt haben, erstellt Fazit automatisch eine Jahreshochrechnung.
 
 ##### davon Frauen
