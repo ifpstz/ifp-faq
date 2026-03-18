@@ -44,6 +44,8 @@ extra_css:
 extra_templates:
   - admin/index.html
   - admin/config.yml
+extra_files:
+  - images/
 
 plugins:
   - search
