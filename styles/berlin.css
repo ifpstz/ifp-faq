@@ -14,7 +14,7 @@
 @font-face {
   font-family: "Berlin Type";
   src: url("../assets/fonts/BerlinTypeWeb-Bold.woff2") format("woff2");
-  font-weight: 600; /* fett */
+  font-weight: 700; /* fett */
   font-style: normal;
   font-display: swap;
 }
@@ -47,8 +47,8 @@
 
 /* Fließtext */
 .md-typeset p {
-  font-size: 0.8rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 /* ---------------------------
@@ -73,13 +73,12 @@
   color: var(--md-nav-link-color);
 }
 
-/* 2. Schrift anwenden */
+/* Schrift & Berliner CI Farben */
 :root {
-  --md-text-font: "Berlin Type", Arial, sans-serif;
-}
-/* 3. Berliner CI Farben definieren */
+  /* Schrift */
+  --md-text-font: "Berlin Type", "Helvetica Neue", Arial, sans-serif;
+
 /* Light Mode */
-:root {
   --md-primary-fg-color: #324fa3;             /* Primäre Farbe (z. B. Überschriften, Buttons) */
   --md-primary-fg-color--light: #dddddd;      /* Hellerer Ton der Primärfarbe */
   --md-primary-fg-color--dark: #363636;       /* Dunklerer Ton der Primärfarbe */
@@ -100,7 +99,7 @@
   --md-fg-color--secondary: #988bc2;          /* Sekundäre Textfarbe (z. B. Fußnoten, Labels) */
   --md-background-color: #13245b;             /* Seiten-Hintergrund */
   --md-surface-color: #13245b;                /* Hintergrund für Karten, Container, Menüs */
-  --md-nav-bg-color: #ffffff;                 /* Hintergrund Navigation */
+  --md-nav-bg-color: #1e2d5a;                 /* Hintergrund Navigation */
   --md-nav-link-color: #cccccc;               /* Farbe Navigation Links */
   --md-link-color: #ffffff;                   /* Linkfarbe (Textlinks) */
 }
