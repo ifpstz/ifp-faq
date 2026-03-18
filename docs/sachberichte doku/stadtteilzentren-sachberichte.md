@@ -34,11 +34,18 @@ Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die bes
 
 ##### Methode der Datenerhebung
 
+Möglichkeiten:
+* ganzjährige Zählung
+* Statistikweochen
+
+Wählen Sie die für Sie passende Datenerhebungsmethode aus
+
 ##### Zahl der Besuchenden im Berichtsjahr
+Wenn Sie Statistikwochen als Erhebungsmethode ausgewählt haben, erstellt Fazit automatisch eine Jahreshochrechnung.
 
 ##### davon Frauen
 
-Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die besondere Förderung von Frauen\* im Rahmen der Förderstruktur. Bitte zählen Sie dazu alle Menschen, die sich selbst als Frauen identifizieren. Männer und nicht binäre Gender zählen nicht zu dieser Gruppe.
+Die Anzahl der Frauen\* innerhalb der Besuchendenschaft ist wichtig für die besondere Förderung von Frauen (Gendermainstreaming) \* im Rahmen der Förderstruktur. Bitte zählen Sie dazu alle Menschen, die sich selbst als Frauen identifizieren. Männer und nicht binäre Gender zählen nicht zu dieser Gruppe.
 
 #### Besuchende nach Altersgruppen
 
