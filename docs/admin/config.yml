@@ -26,6 +26,25 @@ collections:
       - { label: "Entwurf", name: "draft", widget: "boolean", default: true }
       - { label: "Inhalt", name: "body", widget: "markdown" }
 
+  - name: "sachberichte"
+    label: "Sachberichte Dokumentation"
+    folder: "docs/sachberichte doku"
+    extension: "md"
+    format: "frontmatter"
+    create: true
+#    path: "{{file_path}}" 
+    summary: "{{title}} — Status: {{draft}}"
+    fields:
+#      - { label: "Ordner / URL-Name", name: "slug", widget: "string", hint: "Beispiel: Oberkategorie/Thema" }
+      - { label: "Titel", name: "title", widget: "string" }
+      # FEATURE: Hero Bild
+      - { label: "Bild", name: "image", widget: "image", required: false}
+      # FEATURE: Sortierung (wird als 'order' im Frontmatter gespeichert)
+      - { label: "Sortierung (niedrig = oben)", name: "order", widget: "number", default: 10, required: false }
+      # FEATURE: Entwurf-Status
+      - { label: "Entwurf", name: "draft", widget: "boolean", default: true }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
   - name: "ressourcen"
     label: "Ressourcen"
     folder: "docs/ressourcen"
