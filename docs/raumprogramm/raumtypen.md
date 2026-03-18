@@ -2,7 +2,7 @@
 title: Raumtypen und Anforderungen
 image: ''
 order: 10
-draft: true
+draft: false
 ---
 
 # Raumtypen und Anforderungen
