@@ -1,7 +1,7 @@
 nav:
   - Startseite: index.md
-  - Wegweiser
-  - Sachberichte Dokumentation
-  - Ressourcen
-  - Blog
+  - wegweiser
+  - sachberichte doku
+  - ressourcen
+  - blog
   - ...
